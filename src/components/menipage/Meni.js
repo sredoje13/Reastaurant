@@ -86,7 +86,7 @@ window.scrollTo({
      behavior: "smooth"
 });
 }
-const buttons=["Predjela,salate i supe","Vege obroci i Plodovi mora",
+const buttons=["Predjela, corbe i supe","Vege obroci i Plodovi mora",
 "Preporucena jela","Salate i Dezerti","Variva, Sirevi i Peciva","Dorucak"]
 const buttonsforsmall=buttons.map((item,i)=>(
     <button key={item} onClick={()=>clicktoscroll(i)} className='buttonsmall'>
