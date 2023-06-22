@@ -1,0 +1,65 @@
+.app {
+ width:100vw;
+ overflow-x: hidden;
+}
+.app-spin{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+height:100vh;
+background-color: rgb(32, 32, 32);
+}
+
+.spin-img{
+margin-top: 50px;
+width:30%;
+animation: spinimg 2s ease-in;
+}
+@keyframes spinhr{
+  from{
+ padding-right: 0%;
+  }
+  to{
+padding-right:30%
+  }
+}
+.hr{
+animation:spinhr 2s ease-in; 
+
+display: flex;
+justify-content: flex-start;
+border:2px solid rgb(197, 130, 6);}
+@keyframes spinimg{
+  from{
+    opacity: 1;
+  }
+  to{
+opacity: 0.2;
+  }
+}
+.spin-h1{
+font-size: 400%;
+margin-top: 100px;
+font-family: 'Kaushan Script', cursive;
+color:rgb(197, 130, 6);
+
+}
+@media only screen and (max-width:1500px){
+
+  .spin-h1{
+    font-size: 300%;
+   margin-top: 200px;
+  }
+   
+
+}
+@media only screen and (max-width:1000px){
+
+  .spin-h1{
+    font-size: 200%;
+   margin-top: 300px;
+  }
+   
+
+}

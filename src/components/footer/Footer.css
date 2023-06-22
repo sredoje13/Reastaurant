@@ -1,0 +1,156 @@
+.logofooter{
+width:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+height:700px
+
+}
+.footer{
+    width: 100%;
+
+}
+.container{
+    background-color: rgb(61, 61, 61);
+display: grid;
+grid-template-columns: auto auto auto auto;
+width:100%;
+padding-top: 100px;
+font-family: 'Cutive Mono', monospace;
+color: bisque;
+padding-bottom: 150px;
+
+}
+.grid-item{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+align-items: flex-start;
+padding-left: 20%;
+}
+.navlinkclass{
+text-decoration: none;
+color: bisque;
+margin-top: 10px;
+}
+.navlinkclass:hover{
+    color:black
+}
+.navlinkactive{
+  color:black 
+}
+.footer-img{
+    width:20%;
+   
+}
+.footer-p{
+width: 100%;
+text-align: center;
+    background-color: rgb(61, 61, 61);
+    color:grey;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.afooter{
+    font-size:xx-large ;
+    color:bisque;
+    margin-right:10px;
+}
+.afooter:hover{
+  
+    color:rgb(121, 102, 80)
+}
+@media only screen and (max-width:1500px){
+   
+  .footer{
+    font-size: smaller;
+  }
+
+
+}
+@media only screen and (max-width:1200px){
+    .logofooter{
+
+    height:500px; 
+    }
+    .footer{
+        font-size: x-small;
+    }
+
+}
+@media only screen and (max-width:1200px){
+   
+    .logofooter{
+
+    height:500px; 
+    }
+
+
+}
+@media only screen and (max-width:700px){
+   
+    .logofooter{
+
+    height:300px; 
+    }
+
+    .footer{
+        font-size: xx-small;
+        
+    }
+    .grid-item{
+        padding-left: 5%;
+      align-items: center;
+    }
+    .grid-item h2{
+        
+        text-align: center;
+      }
+}
+@media only screen and (max-width:500px){
+  .footer-img{
+    width:50%
+  }
+    .container {
+       
+        display: flex;
+       flex-direction: column;
+        width: 100%;
+        padding-top: 40px;
+    
+        padding-bottom: 50px;
+      }
+
+    .logofooter{
+
+    height:300px; 
+    }
+
+    .footer{
+        font-size: small;
+        
+    }
+    .grid-item{
+        padding-left: 0%;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+    .grid-item h2{
+        border-bottom: 2px solid bisque;
+        width:auto
+      }
+    .afooterdiv{
+        display: flex;
+        justify-content: space-between;
+    }
+    .afooter{
+        margin:5px;
+        margin-right:0px
+    }
+}
+@media only screen and (max-width:390px){
+
+    .grid-item h2{
+        width:60%
+      }
+}

@@ -1,0 +1,181 @@
+.galery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 90px;
+}
+.galery-topimage{
+   /*  background-image: url('./fantasy1.jpg'); */
+    background: linear-gradient(rgba(160, 93, 6, 0.8), rgba(255, 255, 255, 0.5)), url("./fantasy1.jpg") no-repeat fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 67vh;
+}
+.galery-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.galeryitem{
+    overflow: hidden;
+    color:#000000d5;
+width: 350px;
+overflow: hidden;
+height: 200px;
+display: flex;
+align-items: center;
+}
+.galeryimg{
+    width:400px
+}
+.oneimagediv{
+ position: fixed;
+ width:750px;
+ overflow: hidden;
+z-index: 10;
+top:10%;
+height:500px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.galeryimg:hover{
+    cursor:pointer;
+    scale:1.5;
+    transition: scale 1.5s;
+
+}
+.oneimage{
+width:700px;
+
+
+}
+.oneimageclose{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.oneimageclose button{
+    border:0;
+    cursor: pointer;
+    background-color: inherit;
+}
+@keyframes spinLogo {
+    from{
+      transform: rotate(0deg);  
+    }
+    to{
+        transform: rotate(360deg);  
+    }
+}
+.spinlogo{
+animation-name: spinLogo;
+animation-duration: 2s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+
+}
+.spinlogo:hover{
+    animation-play-state: paused;
+}
+@media only screen and (max-width:1500px){
+    .galeryitem{
+        width:250px;
+        height:150px
+        
+    }}
+    @media only screen and (max-width:1050px){
+        .galeryitem{
+            width:165px;
+            height:110px
+            
+        }
+     .oneimage{
+        width:600px
+     } 
+     .galery-topimage{
+        height:40vh
+     }
+     .oneimagediv{
+        width:700px
+     }
+    }
+    @media only screen and (max-width:800px){
+        .galery-topimage{
+           height:30vh
+            
+        }
+     .oneimage{
+        width:600px
+     } 
+    .spinlogo{
+        width:150px
+    }
+    .galery h1{
+        font-size: 100%;
+    }
+   .galery-container{
+    grid-template-columns:  auto auto auto;
+    row-gap: 5px;
+column-gap: 5px;
+   }
+ .oneimage{
+    width:490px
+ } 
+ .oneimagediv{
+width:500px
+ }
+    }
+
+    @media only screen and (max-width:500px){
+   
+   
+    .galery h1{
+        margin-top: -10px;
+    }
+   .galery-container{
+    grid-template-columns: auto;
+  
+   }
+ .oneimage{
+    width:300px
+ } 
+ .galeryitem {
+    width: 300px;
+    height: 200px;
+  }
+ .galeryimg{
+    width:500px
+ }
+ .oneimagediv{
+width:300px;
+top: 20%;
+ }
+    }
+
+    @media only screen and (max-width:300px){
+   
+   
+     .oneimage{
+        width:250px
+     } 
+     .galeryitem {
+        width: 250px;
+        height: 100px;
+      }
+     .galeryimg{
+        width:350px
+     }
+     .oneimagediv{
+    width:265px;
+    top: 20%;
+     }
+        }

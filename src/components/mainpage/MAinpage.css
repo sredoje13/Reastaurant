@@ -1,0 +1,651 @@
+@keyframes image{
+    from {
+        opacity:1
+    }
+    to{
+opacity: 0.7;
+    }
+}
+.images{
+    width:100%;
+    height:1500px;
+    flex-shrink: 0;
+    
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+.imgdiv{
+    height: 1000px;
+    overflow-y:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  width:100%;
+  overflow-x: hidden;
+}
+.buttondiv{
+    position: absolute;
+   width:100%;
+    display:flex;
+    justify-content: space-around;
+   
+}
+.buttondiv button{
+    margin-top: 90px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    border: 0px;
+    opacity: 0.5;
+    color:grey
+}
+
+.buttondiv button:disabled{
+    opacity: 1;
+}
+@keyframes left{
+from{
+    transform: translateX(0%);
+}
+to{
+    transform: translateX(100%);
+}
+}
+@keyframes right{
+ from{
+    transform: translateX(0%);
+}
+to{
+    transform: translateX(-100%);  
+}   
+}
+.wrapper{
+    display: flex;
+    justify-content: flex-start;
+   width:2000px
+}
+.leftclass-enter{
+    transform: translateX(-100%);
+
+}
+.leftclass-enter-active{
+    transform: translateX(0%);
+    transition: transform 2000ms ease-in-out;
+}
+.leftclass-exit{
+    transform:translateX(0%)
+}
+.leftclass-exit-active{
+    transform: translateX(100%);
+    transition:transform 1000ms ease-in-out
+}
+.rightclass-enter{
+    transform: translateX(100%);
+   
+
+}
+.rightclass-enter-active{
+    transform: translateX(0%);
+    transition: transform 2000ms ease-in-out;
+}
+.rightclass-exit{
+    transform: translateX(0%);
+}
+.rightclass-exit-active{
+    transform: translateX(-100%);
+    transition:transform 2000ms ease-in-out;
+}
+.aboutpage{
+display: flex;
+width:100%;
+justify-content: space-around;
+align-items: center;
+background-color: rgb(17, 17, 17);
+margin-top: 50px;
+}
+.aboutpage1{
+    width:50%;
+    display:flex;
+    font-size: x-large;
+    flex-direction: column;
+    margin-left: 10%;
+    font-family: 'Work Sans', sans-serif;
+}
+.aboutpage1 h1,.aboutpage2 h1,.aboutpage3 h1{
+    font-size: 300%;
+    color:rgb(151, 116, 18)
+}
+.aboutpage1 h2,.aboutpage1 p{
+    width:50%;
+    color:rgb(231, 228, 221)
+}
+.aboutpageimg{
+    width:auto
+}
+.aboutlink{
+    color:white;
+    text-decoration: none;
+    font-size: xx-large;
+
+}
+.aboutlink:hover{
+    color:rgb(179, 175, 175)
+}
+.linkdiv{
+    margin-top: 50px;
+border-left: 2px solid white;
+padding-left: 20px;
+}
+.meze1,.meze2{
+width:500px;
+position: absolute;
+margin-top: -150px;
+margin-left: -250px;
+box-shadow: 0px 0px 15px 5px black;
+}
+.meze2{
+    width:600px;
+
+    z-index: 100;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.aboutpage2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:30%;
+    font-size: x-large;
+    margin-right: -200px;
+  
+}
+.navlink2{
+color:black;
+text-decoration: none;
+}
+.navlink3{
+    color:rgb(252, 248, 248);
+text-decoration: none;
+}
+
+.navlink2:hover,.navlink3:hover{
+    color:grey
+}
+.cake{
+    width:50%
+}
+.aboutpage3{width:30%;font-size: x-large;
+padding:10%;
+
+}
+.about3{
+    margin-top: 200px;
+}
+.fiximage{
+    background-image: url("./fix.jpg");
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    background-size: 100%;
+}
+.fiximage h1{
+    color: rgb(209, 118, 14);
+    font-size: 300%;
+}
+.fix-link{
+    font-size: xx-large;
+   font-weight: 700;
+   color:rgb(190, 186, 186);
+   margin-top: 100px;
+}
+.comments{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+}
+.onecomment{
+    min-width:500px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  transition: 1s;  
+}
+.onecomment p{
+    width:90%
+}
+.onecomment h1{
+    color:rgb(182, 136, 8);
+    font-family: 'Cutive Mono', monospace;
+    padding-bottom: 15px;
+}
+.pcomment{
+    width:90%", textAlign:"center;
+    text-align: center;
+    font-size:x-large;
+    font-family:'Kaushan Script', cursive
+}
+.left{
+ margin: 50px;
+ border: 0;
+ font-size: 500%;
+ background-color: inherit;
+ color:rgb(182, 127, 8);
+ cursor: pointer;
+
+}
+.left:hover,.right:hover{
+    color:grey;
+}
+
+
+.commentWrapper{
+
+  width:500px;
+  overflow: hidden;
+ box-shadow: 0px 0px 20px 1px;
+  display: flex;
+  justify-content: flex-start;
+}
+.commentdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.commentdiv h1{
+    color:rgb(170, 107, 14);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+.iframe{
+    width:50%;
+    height:70vh
+}
+.mapimagediv{
+    background-image: url('./googlemap.jpg');
+   width:50%;
+   height:70vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   filter: blur(2px);
+
+}
+.absolutemap{
+    color:white;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    padding: 20px;
+   text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 120%;
+  position: absolute;
+  left:15%;
+  z-index: 5;
+ 
+}
+.absolutemap p{
+    display: flex; 
+    align-items: center;
+   
+}
+@media only screen and (max-width:1500px){
+   .aboutpage2 h1,.aboutpage3 h1,.aboutpage1 h1{
+        font-size: 200%;
+    }
+    .aboutpage1 h2{
+        font-size: medium;
+    }
+    .aboutlink{
+        font-size: x-large;
+       
+    }
+    .linkdiv{
+        margin-bottom: 50px;
+    }
+    .imgabout1{
+    width:500px
+    }
+    .fiximage{
+        background-repeat: repeat;
+        height:700px
+    }
+    .meze1{
+    width:300px
+    }
+    .meze2{
+    width:400px
+    }
+    .absolutemap{
+        left:7%
+    }
+    }
+
+    @media only screen and (max-width:1200px){
+        .left{
+          font-size: 200;
+          margin:20px
+        }
+        .commentdiv h1{
+            font-size: 150%;
+        }
+        .buttondiv button{
+            font-size: xx-small;
+        }
+        .imgdiv{
+            height:700px
+        }
+        .aboutpage2 h1,.aboutpage3 h1,.aboutpage1 h1{
+             font-size: 150%;
+         }
+         .aboutpage1,.aboutpage2,.aboutpage3{
+            font-size: medium;
+         }
+         .aboutpage1 h2{
+             font-size: medium;
+         }
+
+         .linkdiv{
+             margin-bottom: 30px;
+         }
+         .imgabout1{
+         width:300px
+         }
+         .fiximage{
+             background-repeat: repeat;
+             height:700px
+         }
+         .meze1{
+         width:200px;
+         margin-top: -90px;
+         margin-left: -130px;
+        
+         }
+         .meze2{
+         width:250px
+         }
+         .aboutpage2{
+            width:40%;
+            margin-right: -120px;
+         }
+         .absolutemap{
+             left:2%;
+             font-size: 90%;
+         }
+         .aboutlink{
+            font-size: medium;
+           
+        }
+        .comments{
+            margin-top:50px
+        }
+        .wrapper{
+            width:1200px
+        }
+        .images{width:1350px;
+        height:auto
+        }
+         }
+    
+         @media only screen and (max-width:700px){
+            .wrapper{
+                width:700px
+            }
+            .images{width:950px;
+            height:auto
+            }
+          
+            .commentdiv h1{
+                font-size: 100%;
+            }
+            .buttondiv button{
+                font-size: 50%;
+            }
+            .imgdiv{
+                height:450px
+            }
+            .aboutpage2 h1,.aboutpage3 h1,.aboutpage1 h1{
+                 font-size: 120%;
+             }
+             .aboutpage1,.aboutpage2,.aboutpage3{
+                font-size: small;
+             }
+             .aboutpage1 h2{
+                 font-size: x-small;
+             }
+    
+             .linkdiv{
+                 margin-bottom: 10px;
+             }
+             .imgabout1{
+             width:200px
+             }
+             .fiximage{
+                 background-repeat: repeat;
+                 height:700px
+             }
+             .meze1{
+             width:150px;
+             margin-top: -60px;
+             margin-left: -80px;
+            
+             }
+             .meze2{
+             width:180px
+             }
+             .aboutpage2{
+                width:30%;
+                margin-right: -60px;
+             }
+             .iframe,.mapimagediv{
+                height:40vh
+             }
+             .aboutpage{
+                margin-top:20px
+             }
+             .absolutemap{
+                 left:2%;
+                 font-size: 60%;
+             }
+             .aboutlink{
+                font-size: medium;
+               
+            }
+            .commentdiv h1{
+                font-size: 150%;
+            }
+            .commentWrapper{
+                width:350px
+            }
+            .onecomment{
+                min-width: 350px;
+            }
+            .left{
+               
+                margin:0px
+              }
+            .left svg{
+                font-size: 90%;
+            }
+             }
+             @media only screen and (max-width:500px){
+          
+                .commentdiv h1{
+                    font-size: 100%;
+                }
+                .buttondiv button{
+                  
+                    font-size: 20%;
+                }
+                .wrapper{
+                    width:500px
+                }
+                .images{width:750px;
+                height:auto
+                }
+                .imgdiv{
+                    height:400px;
+                   
+                }
+                .aboutpage2 h1,.aboutpage3 h1,.aboutpage1 h1{
+                     font-size: 200%;
+                 }
+                 .aboutpage1 h2, .aboutpage1 p{
+                    width:100%
+                 }
+                 .aboutpage2{
+                    margin-top: 200px;
+                 }
+                
+                 .aboutpage1,.aboutpage2,.aboutpage3{
+                    font-size: medium;
+                    width:95%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 0%;
+                    margin-right: 0px;
+                 }
+                 .aboutpage1 h2{
+                     font-size: 100%;
+                     text-align: center;
+                     margin-top: -10px;
+                 }
+        
+                 .linkdiv{
+                     margin-bottom: 20px;
+                     margin-top: 20px;
+                     border-right: 2px solid white;
+                     padding-right: 20px;
+                     text-align: center;
+                     width:200px;
+                     font-size: medium;
+                   
+                 }
+                 .imgabout1{
+                 width:300px;
+                 
+                 }
+                 .fiximage{
+                     height:500px
+                 }
+                 .meze1{
+                 width:180px;
+                 margin-top: -10px;
+                 margin-left: -140px;
+                
+                 }
+                 .meze2{
+                 width:230px;
+                 margin-top: 70px;
+                 margin-left: -90px;
+                 }
+                 .fiximage h1{
+                    font-size: 250%;
+                 }
+                .fix-link {
+                    margin-top: 50px;
+                  }
+                .mapimagediv{
+                    background-image: url("./mainimage.jpg");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    filter: blur(1px);
+                }
+                 .iframe,.mapimagediv{
+                    height:300px;
+                    width:100%
+                 }
+                 .aboutpage{
+                  flex-direction: column;
+                 }
+                 .absolutemap{
+                     left:0%;
+                     position:relative;
+                     font-size: 80%;
+                     margin-top: -250px;
+                 }
+                 .aboutlink{
+                    font-size: medium;
+                   
+                }
+                .commentdiv h1{
+                    margin-top: 10px;
+                    font-size: 200%;
+                }
+                .commentWrapper{
+                    width:300px
+                }
+                .onecomment{
+                    min-width: 300px;
+                    font-size: smaller;
+                }
+                .left{
+                   
+                    margin:-10px;
+                    margin-top:-20px
+                  }
+                .left svg,.right svg{
+                    font-size: 50%;
+                }
+                .pcomment{
+                    font-size: medium;
+                }
+                 }
+ @media only screen and (max-width:350px){
+
+    .commentWrapper{
+        width:180px
+    }
+    .commentdiv h1{
+        margin-top: 10px;
+        font-size: 100%;
+    }
+    .onecomment{
+        min-width: 180px;
+        font-size: smaller;
+    }
+    .left{
+        margin:0px;
+      z-index:10;
+       position: absolute;
+     margin-top: 80px;
+     margin-right: 80px;
+   
+      }
+    .right{
+        position: absolute;
+        border: 0;
+        z-index:10;
+        font-size: 500%;
+        margin-top: 80px;
+        background-color: inherit;
+        color: rgb(182, 127, 8);
+        margin-left: 80px;
+
+        cursor: pointer;
+      
+    }
+    .left svg{
+        font-size: 50%;
+    }
+    .meze1{
+       
+        margin-left: -130px;
+       
+        }
+        .meze2{
+        width:200px;
+        
+        margin-left: -70px;
+        }
+ }

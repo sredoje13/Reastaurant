@@ -1,0 +1,18 @@
+.restaurantimage{
+    background-image: url('./DSC_5836-1620x840.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.restoran{
+    font-family: 'Work Sans', sans-serif;
+}
+@media only screen and (max-width:800px){
+    .restaurantimage{
+        height: 30vh;
+     
+    }}

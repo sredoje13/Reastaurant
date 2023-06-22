@@ -1,0 +1,134 @@
+.iframe2{
+    height:500px;
+    width:100%;
+}
+.divv{
+display:flex;
+ flex-direction:column;
+ width:50%;
+ align-items:center
+}
+.form{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%
+}
+.kontakt{
+   margin-bottom: 50px;
+    background-image: url('./coctel2.jpg');
+    background-size: cover;
+    width:100%;
+    background-repeat: no-repeat;
+    height:800px;
+}
+.maincontact h1{
+    color: #b36a1c;
+}
+.maincontact{
+    font-family: 'Work Sans', sans-serif;
+}
+.btn{
+background: linear-gradient(to left,#ffffff, #f69d3c);
+border:2px solid rgb(202, 160, 126);
+width:150px;
+color:rgb(116, 102, 85);
+height:50px;
+font-size: large;
+border-radius: 10px;
+}
+.btn:hover{
+    background: linear-gradient(to right,#ffffff, #f69d3c);
+  cursor: pointer;
+}
+.formnameandemail{
+    display: flex;
+    width:70%;
+    justify-content: space-between;
+}
+.formandreservation{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.atel{
+    color:rgb(175, 74, 7)
+}
+@media only screen and (max-width:1200px){
+   h1{
+    font-size: 150%;
+   }
+   .formnameandemail{
+   
+    width:90%;
+   
+}
+
+}
+@media only screen and (max-width:900px){
+    h1{
+     font-size: 79%;
+    }
+    .kontakt{
+     
+         height:700px;
+     }
+ 
+ 
+ }
+ 
+ @media only screen and (max-width:500px){
+ 
+    .btn{
+        width:90px;
+color:rgb(116, 102, 85);
+height:30px;
+font-size: medium;
+    }
+    h1{
+        font-size: 150%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .kontakt{
+    
+         height:500px;
+     }
+     .iframe2{
+        height:300px;
+       
+    }
+    .formandreservation{
+        flex-direction: column;
+        align-items: center;
+     }
+     .divv{
+        width:100%
+    }
+    .divv2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+ @media only screen and (max-width:300px){
+ 
+    .btn{
+        width:100px;
+color:rgb(116, 102, 85);
+height:40px;
+font-size: small;
+    }
+    .kontakt{
+    
+         height:400px;
+     }
+     .iframe2{
+        height:200px;
+       
+    }
+    
+ 
+ }
