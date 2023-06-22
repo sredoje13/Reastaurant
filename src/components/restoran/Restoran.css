@@ -1,8 +1,9 @@
 .restaurantimage{
     background-image: url('./DSC_5836-1620x840.jpg');
-    width: 100%;
+   
     background-size: cover;
-    height: 50vh;
+    width:2000px;
+     height:1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +14,19 @@
 }
 @media only screen and (max-width:800px){
     .restaurantimage{
-        height: 30vh;
+        width:1000px;
+     height:500px   
      
     }}
+    @media only screen and (max-width:500px){
+        .restaurantimage{
+            width:600px;
+            height:300px 
+         
+        }}
+        @media only screen and (max-width:300px){
+            .restaurantimage{
+                width:500px;
+            height:300px  
+             
+            }}
