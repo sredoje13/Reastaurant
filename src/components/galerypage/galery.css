@@ -15,8 +15,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width:2000px;
-        height:auto
-        
+     height:1000px   
 }
 .galery-container{
     display: grid;
@@ -104,7 +103,7 @@ animation-iteration-count: infinite;
      } 
      .galery-topimage{
         width:1350px;
-        height:auto
+        height:800px
      }
      .oneimagediv{
         width:700px
@@ -113,7 +112,7 @@ animation-iteration-count: infinite;
     @media only screen and (max-width:800px){
         .galery-topimage{
             width:900px;
-            height:auto
+            height:500px
             
         }
      .oneimage{
